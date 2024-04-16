@@ -3,7 +3,9 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
-from financial_analyst_crew.crew import FinancialAnalystCrew
+# from financial_analyst_crew.crew import FinancialAnalystCrew
+
+from crew import FinancialAnalystCrew
 
 def run():
     inputs = {
