@@ -7,6 +7,8 @@ class FinancialAnalystCrew():
     """FinancialAnalystCrew crew"""
     agents_config = 'config/agents.yaml'
     tasks_config = 'config/tasks.yaml'
+    # agents_config = 'financial_analyst_crew/config/agents.yaml'
+    # tasks_config = 'financial_analyst_crew/config/tasks.yaml'
 
     def __init__(self) -> None:
         self.groq_llm = ChatGroq(temperature=0, model_name="mixtral-8x7b-32768")
@@ -40,12 +42,11 @@ class FinancialAnalystCrew():
         )
         
     @crew
-    def  crew(self): #-> Crew:
+    def  crew(self) -> Crew:
         """creates the finnanicl alnalyste crew crew..."""
-        # return Crew()
-        # return Crew(
-        #     agents = self.agents,
-        #     tasks =  self.tasks,
-        #     process= Process.sequential,
-        #     verbose= True
-        # )
+        return Crew(
+            agents = self.agents,
+            tasks =  self.tasks,
+            process= Process.sequential,
+            verbose= True
+        )
