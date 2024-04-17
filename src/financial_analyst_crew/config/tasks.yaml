@@ -7,7 +7,7 @@ research_company_task:
 
 analyze_company_task:
   description: >
-    Take {company_name}'s financial information, analyze it, and provide a financial analysis, including: Profitability ratios, 
+    Take {company_name}'s latest news,  financial information, analyze it, and provide a financial analysis, including: Profitability ratios, 
     Liquidity ratios, Solvency ratios, Efficiency ratios, Growth metrics, Valuation metrics and Market trends analysis.
   expected_output: >
     A nicely formatted analysis including all of the financial metrics necessary for a thorough analysis of a company.
